@@ -18,34 +18,42 @@ namespace Pay_Parking.Classes
             Summaries = new List<Summary>();
         }
 
-        public void ShowCars()
+        // Functia returneaza true in cazul in care se afla masini in parcare, false altfel
+        public bool ShowCars()
         {
             Console.WriteLine("\n");
+            if (Cars.Count == 0)
+            {
+                Console.WriteLine("Nu sunt masini in parcare!");
+                return false;
+            }
+            Console.WriteLine("Masinile aflate in parcare: ");
             foreach (var car in Cars)
             {
-                Console.WriteLine(car.LicensePlate);
+                Console.WriteLine(" - " + car.LicensePlate);
             }
+
+            return true;
         }
 
-        public void AddCar()
+        // Functia returneaza true daca masina a fost adaugata in parcare, false altfel
+        public bool AddCar(string licensePlate)
         {
+            // Daca nu mai sunt locuri de parcare, afisam un mesaj si returnam false
             if (ParkingSpots == 0)
             {
                 Console.WriteLine("\nNu mai sunt locuri libere in parcare! Va rugam asteptati pana ce se elibereaza un loc.");
-                return;
+                return false;
             }
-                
-            Console.Write("\nNumarul de inmatriculare al masinii: ");
-            string licensePlate = Console.ReadLine();
 
             // Variabila pentru a verifica daca mai exista o masina cu acest numar de inmatriculare in parcare
             var checkCar = Cars.SingleOrDefault(c => c.LicensePlate.Equals(licensePlate)); 
 
-            // Daca mai exista, afisam un mesaj utilizatorului si iesim din functie
+            // Daca mai exista, afisam un mesaj utilizatorului si returnam false
             if (checkCar != null)
             {
                 Console.WriteLine("Ati introdus un numar de inmatriculare gresit! Exista deja o masina cu acest numar in parcare!");
-                return;
+                return false;
             }
 
             Car car = new Car(licensePlate);
@@ -54,13 +62,14 @@ namespace Pay_Parking.Classes
             Summary summary = new Summary(car);
 
             Summaries.Add(summary);
+
+            return true;
         }
 
-        public void FreeSpot()
+        // Functia returneaza true daca a fost eliberat locul, false altfel
+        public bool FreeSpot(string licensePlate)
         {
-            Console.Write("\nNumarul de inmatriculare al masinii: ");
-            string licensePlate = Console.ReadLine();
-            
+
             Car car;
             try
             {
@@ -68,15 +77,15 @@ namespace Pay_Parking.Classes
             }
             catch (Exception e)
             {
-                Console.WriteLine(e);
-                throw;
+                Console.WriteLine("Au fost gasite mai multe masini cu acelasi numar de inmatriculare! Va rugam contactati administratorul.");
+                return false;
             }
             
             // Verificam daca exista masina pe care dorim sa o stergem
             if (car == null)
             {
                 Console.WriteLine("Ati introdus un numar de inmatriculare gresit! Masina nu se afla in aceasta parcare!");
-                return;
+                return false;
             }
 
             Cars.Remove(car);
@@ -95,10 +104,11 @@ namespace Pay_Parking.Classes
             }
             catch (Exception e)
             {
-                Console.WriteLine(e);
-                throw;
+                Console.WriteLine("Nu s-a putut genera un sumar pentru masina dumneavoastra! Va rugam contactati administratorul.");
+                return false;
             }
 
+            return true;
         }
 
         public void UpdateParkingSpots()

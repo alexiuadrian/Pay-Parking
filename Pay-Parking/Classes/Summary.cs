@@ -9,6 +9,11 @@ namespace Pay_Parking.Classes
         public int ParkTime { get; set; }
         public Car Car { get; set; }
 
+        public Summary()
+        {
+
+        }
+        
         public Summary(Car car)
         {
             Car = car;
@@ -20,8 +25,10 @@ namespace Pay_Parking.Classes
             this.ParkTime = (int) Math.Ceiling((EndDate - StartDate).TotalHours);
         }
 
-        public void ShowSummary()
+        // Functia returneaza pretul total pentru stationare
+        public int ShowSummary()
         {
+            int price = 0;
             DoPrice();
             Console.WriteLine("-----------------------------------");
             Console.WriteLine("Pentru masina cu numarul de inmatriculare: " + Car.LicensePlate);
@@ -36,10 +43,12 @@ namespace Pay_Parking.Classes
             {
                 // Pretul final este calculat in functie de numarul orelor stationate (in afara de prima) inmultit cu 5 la care se adauga pretul
                 // primei ore
-                int price = (ParkTime - 1) * 5 + 10;
+                price = (ParkTime - 1) * 5 + 10;
                 Console.WriteLine("Costul parcarii este " + price + " Lei");
             }
             Console.WriteLine("-----------------------------------");
+
+            return price;
         }
     }
 }

@@ -58,13 +58,17 @@ namespace Pay_Parking.Classes
                 }
                 case 2:
                 {
-                    Parking.AddCar();
+                    Console.Write("\nNumarul de inmatriculare al masinii: ");
+                    string licensePlate = Console.ReadLine();
+                    Parking.AddCar(licensePlate);
                     Parking.UpdateParkingSpots();
                     break;
                 }
                 case 3:
                 {
-                    Parking.FreeSpot();
+                    Console.Write("\nNumarul de inmatriculare al masinii: ");
+                    string licensePlate = Console.ReadLine();
+                    Parking.FreeSpot(licensePlate);
                     Parking.UpdateParkingSpots();
                         break;
                 }
