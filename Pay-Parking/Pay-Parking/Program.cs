@@ -1,4 +1,5 @@
 ﻿using System;
+using Pay_Parking.Classes;
 
 namespace Pay_Parking
 {
@@ -6,7 +7,13 @@ namespace Pay_Parking
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ParkingManager parkingManager = new ParkingManager();
+            int option = 0;
+            while (option != 4)
+            {
+                option = parkingManager.Menu();
+                parkingManager.ManageOption(option);
+            }
         }
     }
 }
