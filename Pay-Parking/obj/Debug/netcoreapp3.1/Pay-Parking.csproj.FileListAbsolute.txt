@@ -11,3 +11,16 @@ E:\repos\Pay-Parking\Pay-Parking\Pay-Parking\obj\Debug\netcoreapp3.1\Pay-Parking
 E:\repos\Pay-Parking\Pay-Parking\Pay-Parking\obj\Debug\netcoreapp3.1\Pay-Parking.dll
 E:\repos\Pay-Parking\Pay-Parking\Pay-Parking\obj\Debug\netcoreapp3.1\Pay-Parking.pdb
 E:\repos\Pay-Parking\Pay-Parking\Pay-Parking\obj\Debug\netcoreapp3.1\Pay-Parking.genruntimeconfig.cache
+E:\repos\Pay-Parking\Pay-Parking\bin\Debug\netcoreapp3.1\Pay-Parking.exe
+E:\repos\Pay-Parking\Pay-Parking\bin\Debug\netcoreapp3.1\Pay-Parking.deps.json
+E:\repos\Pay-Parking\Pay-Parking\bin\Debug\netcoreapp3.1\Pay-Parking.runtimeconfig.json
+E:\repos\Pay-Parking\Pay-Parking\bin\Debug\netcoreapp3.1\Pay-Parking.runtimeconfig.dev.json
+E:\repos\Pay-Parking\Pay-Parking\bin\Debug\netcoreapp3.1\Pay-Parking.dll
+E:\repos\Pay-Parking\Pay-Parking\bin\Debug\netcoreapp3.1\Pay-Parking.pdb
+E:\repos\Pay-Parking\Pay-Parking\obj\Debug\netcoreapp3.1\Pay-Parking.csprojAssemblyReference.cache
+E:\repos\Pay-Parking\Pay-Parking\obj\Debug\netcoreapp3.1\Pay-Parking.AssemblyInfoInputs.cache
+E:\repos\Pay-Parking\Pay-Parking\obj\Debug\netcoreapp3.1\Pay-Parking.AssemblyInfo.cs
+E:\repos\Pay-Parking\Pay-Parking\obj\Debug\netcoreapp3.1\Pay-Parking.csproj.CoreCompileInputs.cache
+E:\repos\Pay-Parking\Pay-Parking\obj\Debug\netcoreapp3.1\Pay-Parking.dll
+E:\repos\Pay-Parking\Pay-Parking\obj\Debug\netcoreapp3.1\Pay-Parking.pdb
+E:\repos\Pay-Parking\Pay-Parking\obj\Debug\netcoreapp3.1\Pay-Parking.genruntimeconfig.cache

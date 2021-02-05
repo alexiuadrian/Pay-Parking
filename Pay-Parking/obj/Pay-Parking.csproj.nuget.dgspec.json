@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\repos\\Pay-Parking\\Pay-Parking\\Pay-Parking\\Pay-Parking.csproj": {}
+    "E:\\repos\\Pay-Parking\\Pay-Parking\\Pay-Parking.csproj": {}
   },
   "projects": {
-    "E:\\repos\\Pay-Parking\\Pay-Parking\\Pay-Parking\\Pay-Parking.csproj": {
+    "E:\\repos\\Pay-Parking\\Pay-Parking\\Pay-Parking.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\repos\\Pay-Parking\\Pay-Parking\\Pay-Parking\\Pay-Parking.csproj",
+        "projectUniqueName": "E:\\repos\\Pay-Parking\\Pay-Parking\\Pay-Parking.csproj",
         "projectName": "Pay-Parking",
-        "projectPath": "E:\\repos\\Pay-Parking\\Pay-Parking\\Pay-Parking\\Pay-Parking.csproj",
+        "projectPath": "E:\\repos\\Pay-Parking\\Pay-Parking\\Pay-Parking.csproj",
         "packagesPath": "C:\\Users\\Adi-PC\\.nuget\\packages\\",
-        "outputPath": "E:\\repos\\Pay-Parking\\Pay-Parking\\Pay-Parking\\obj\\",
+        "outputPath": "E:\\repos\\Pay-Parking\\Pay-Parking\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Adi-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
